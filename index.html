@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook clone</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left"> 
+            <img src="images/logo.png" alt="" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+  
+        <div class="nav-right">
+            <div class="search-container">
+                <a href=""><img src="images/search.png" id="display" alt=""></a>
+                <input type="text" class="search" name="" placeholder="search user" id="">
+            </div>
+            <div class="user-icon online" onclick="settings()">
+                <img src="images/profile.jpg" >
+            </div>
+        </div>
+
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Tafrey</p>
+                        <a href="">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Feedback</p>
+                        <a href="">help me improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="images/setting.png" class="setting-icon" alt="">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="setting-icon" alt="">
+                    <a href="#">Help & Support<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="setting-icon" alt="">
+                    <a href="#">Display & Accesscibilitiy<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="setting-icon" alt="">
+                    <a href="#">LogOut<img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-sider">
+            <div class="top-links">
+               <a href="#"><img src="images/news.png" alt="">Latest News</a> 
+               <a href="#"><img src="images/friends.png" alt="">Friends</a> 
+               <a href="#"><img src="images/group.png" alt="">Groups</a> 
+               <a href="#"><img src="images/marketplace.png" alt="">Venue</a>   
+               <a href="#"><img src="images/watch.png" alt="">Watch</a>
+               <a href="">View More</a>   
+            </div>
+            <div class="shortcuts">
+                <p>Recent Groups</p>
+                <a href=""><img src="images/shortcut-1.png" alt="">Premier Dev</a>
+                <a href=""><img src="images/fabslab.jpg" alt=""> Tic Challenge</a>
+                <a href=""><img src="images/shortcut-3.png" alt="">Web Designs</a>
+                <a href=""><img src="images/shortcut-4.png" alt="">web Dev</a>
+                <a href="">View More</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="story-keeper">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Add Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="">
+                    <p>Ketsia Ketinol</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="">
+                    <p>Lekane Styve</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="">
+                    <p>Ngo Teng</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="">
+                    <p>Aloysius</p>
+                </div>
+                <div class="story story6">
+                    <img src="images/profile-pic.png" alt="">
+                    <p>Chanceline</p>
+                </div>
+            </div>
+
+            <div class="poster">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Tafrey</p>
+                        <small>public</small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea  rows="3" placeholder="Tell us about you"></textarea>
+                    <div class="post-links">
+                        <a href=""><img src="images/live-video.png" alt="">Live vidoe</a>
+                        <a href=""><img src="images/photo.png" alt=""><input type="file" value="Photo/Vidoe" id="">Photo/Vidoe</a>
+                        <!-- <input type="file" name="Photo/Vidoe" id=""> -->
+                        <a href=""><img src="images/feeling.png" alt="">Activity</a>
+                        <button class="post">Post</button>
+                    </div>
+                </div>
+                
+            </div>         
+            <div class="friends">
+                <div class="friends-container">
+                    <div class="addfriends">
+                        <img src="images/member-1.png" alt="">
+                    </div>
+                    <div class="button">
+                        <button class="follow">Follow</button>
+                    </div>
+                </div>
+                <div class="friends-container">
+                    <div class="addfriends">
+                        <img src="images/member-1.png" alt="">
+                    </div>
+                    <div class="button">
+                        <button class="follow">Follow</button>
+                    </div>
+                </div>
+                <div class="friends-container">
+                    <div class="addfriends">
+                        <img src="images/member-1.png" alt="">
+                    </div>
+                    <div class="button">
+                        <button class="follow">Follow</button>
+                    </div>
+                </div>
+            </div>   
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Tafrey</p>
+                        <span>Jully 13 2021</span>
+                    </div>
+                </div>
+                <p class="post-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora, tempore ad blanditiis perspiciatis quibusdam harum repellat! soms.</p>
+                <img src="images/feed-image-1.png" class="img">
+                <div class="post-row">
+                    <div class="like-icons">
+                        <div><img src="images/like-blue.png">200</div>
+                        <div><img src="images/comments.png">523</div>
+                        <div><img src="images/share.png">39</div>
+                    </div>
+                    <div class="post-profile"></div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Tafrey</p>
+                        <span>Jully 13 2021</span>
+                    </div>
+                </div>
+                <p class="post-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora, tempore ad blanditiis perspiciatis quibusdam harum repellat! soms.</p>
+                <img src="images/feed-image-3.png" class="img">
+                <div class="post-row">
+                    <div class="like-icons">
+                        <div><img src="images/like-blue.png">200</div>
+                        <div><img src="images/comments.png">523</div>
+                        <div><img src="images/share.png">39</div>
+                    </div>
+                    <div class="post-profile"></div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Tafrey</p>
+                        <span>Jully 13 2021</span>
+                    </div>
+                </div>
+                <p class="post-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora, tempore ad blanditiis perspiciatis quibusdam harum repellat! soms.</p>
+                <img src="images/feed-image-2.png" class="img">
+                <div class="post-row">
+                    <div class="like-icons">
+                        <div><img src="images/like-blue.png">200</div>
+                        <div><img src="images/comments.png">523</div>
+                        <div><img src="images/share.png">39</div>
+                    </div>
+                    <div class="post-profile"></div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Tafrey</p>
+                        <span>Jully 13 2021</span>
+                    </div>
+                </div>
+                <p class="post-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora, tempore ad blanditiis perspiciatis quibusdam harum repellat! soms.</p>
+                <img src="images/feed-image-4.png" class="img">
+                <div class="post-row">
+                    <div class="like-icons">
+                        <div><img src="images/like-blue.png">200</div>
+                        <div><img src="images/comments.png">523</div>
+                        <div><img src="images/share.png">39</div>
+                    </div>
+                    <div class="post-profile"></div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Tafrey</p>
+                        <span>Jully 13 2021</span>
+                    </div>
+                </div>
+                <p class="post-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempora, tempore ad blanditiis perspiciatis quibusdam harum repellat! soms.</p>
+                <img src="images/feed-image-5.png" class="img">
+                <div class="post-row">
+                    <div class="like-icons">
+                        <div><img src="images/like-blue.png">200</div>
+                        <div><img src="images/comments.png">523</div>
+                        <div><img src="images/share.png">39</div>
+                    </div>
+                    <div class="post-profile"></div>
+                </div>
+            </div>
+            <button class="load">view more</button>
+        </div>
+        <div class="right-sider">
+            <div class="sider-title">
+                <h4>Events</h4>
+                <a href="">See All</a>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>12</h3>
+                    <span>July</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><img src="images/location.png" class="loc" alt=""> Premier Dev Yde</p>
+                    <a href="#">Get More</a>
+                </div>
+            </div>
+            <div class="events">
+                <div class="left-event">
+                    <h3>32</h3>
+                    <span>April</span>
+                </div>
+                <div class="right-event">
+                    <h4>Cloud Computing</h4>
+                    <p><img src="images/location.png" class="loc" alt=""> Premier Dev Yde</p>
+                    <a href="#">Get More</a>
+                </div>
+            </div>
+            <div class="sider-title">
+                <h4>Ads</h4>
+                <a href="">Close tab</a>
+            </div>
+            <img src="images/advertisement.png" class="sider-ads" >
+            <div class="sider-title">
+                <h4>Covensation</h4>
+                <a href="">Close Ads</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Ketsia Ketinol</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Lekane Styve</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Ngo Teng Christy</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyrights 2021 @zenithNoble</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
