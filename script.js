@@ -1,5 +1,5 @@
 
-var settingsMenu = document.querySelector('.settings-menu');
+var settingsMenu = document.querySelector('.settings-menu')
 var darkbtn = document.querySelector('#dark-btn');
 
 
